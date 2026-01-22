@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: edtech-nlp2sql
+spec:
+  containers:
+    - name: api
+      image: edtech-nlp2sql:latest
+      ports:
+        - containerPort: 8000
+      resources:
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
